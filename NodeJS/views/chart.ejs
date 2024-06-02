@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature and Humidity Charts</title>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        canvas {
+            width: 45% !important;
+            height: 45% !important; /* Set each chart to take up half of the viewport height */
+        }
+        div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Environmental Data</h1>
+    <div>
+        <canvas id="temperatureChart"></canvas>
+    </div>
+    <div>
+        <canvas id="humidityChart"></canvas>
+    </div>
+
+    <script src="js/chart-setup.js"></script>
+</body>
+</html>

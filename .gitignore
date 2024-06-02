@@ -1,0 +1,4 @@
+build/
+NodeJS/node_modules/
+sdkconfig
+sdkconfig.old
